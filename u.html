@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Do you Love me?</h2>
+
+<button onclick="showMessage('Yes')">Yes</button>
+<button id="noButton" onclick="moveButton()">No</button>
+
+<script>
+    function showMessage(answer) {
+        alert('غصب❤️');
+    }
+
+    function moveButton() {
+        var button = document.getElementById('noButton');
+        button.style.marginLeft = Math.random() * 400 + 'px';
+        button.style.marginTop = Math.random() * 200 + 'px';
+    }
+</script>
+
+</body>
+</html>
